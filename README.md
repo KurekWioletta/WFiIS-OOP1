@@ -1,2 +1,2 @@
 # WFiIS-OOP1
-Object Oriented Programming (1) tasks
+This repository contains tasks realized during C++ university course.
