@@ -16,14 +16,14 @@
  */
  
 #include "MaszynaStanow.h"
-#include "StanyBazowe.h"
+#include "StanyBazowe.h" 
 #include <iostream>
-
+  
 int main()
 {
 	std::string systems[3] = {"Windows", "OS X", "Linux"};
-	
-	MaszynaStanow m;
+	 
+	MaszynaStanow m;  
 	m += new DostepneSystemy(systems, 3);
 	m += new ZbieranieDanych("Adres email");
 	// Ten stan powinien zebrac inforacje o adresie email i zapisac go
@@ -32,11 +32,11 @@ int main()
 	m += new Podsumowanie();
 	// W tym stanie wyswietlamy informacje o zebranych danych (np. adres email)
 	
-	m.start();	
+	m.start();	   
 	m()();
 	std::cout << std::endl;
 	//-------
-	++m;
+	++m; 
 	std::cout << "Po pierwszej inkrementacji: \n" << "m = " << m << std::endl;
 	m()();
 	std::cout << std::endl;
@@ -59,7 +59,6 @@ int main()
 	++m;
 	std::cout << "Na koncu: \n" << "m = " << (const MaszynaStanow&)m << std::endl;
 	m()();
-	
 	return 0;
 }
 
