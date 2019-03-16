@@ -9,7 +9,7 @@
 
 #include "Dir.h"
 #include "File.h"
-
+ 
 int main() {
 
   Dir* top = new Dir(".");
@@ -18,7 +18,7 @@ int main() {
   Dir* ewa = new Dir("ewa");
   *home += ewa;
   Dir* adam = new Dir("adam");
-  *home += adam;  
+  *home += adam;   
   
   std::cout << (const Dir&)*top << std::endl;
 
@@ -27,14 +27,14 @@ int main() {
   *ewa += new File("auto2.jpg");
   *ewa += new File("auto3.jpg");
   Dir* wd = new Dir("work");
-  *wd += new File("proj.descr");
+  *wd += new File("proj.descr");  
   *wd += new File("proj.files.repo");
   *ewa += wd;
 
   std::cout << *top;
   std::cout << "--------------" << std::endl;
   std::cout << *(ewa->get("work"));
-  delete top;
+  delete top;  
 }
 /* wynik 
 .
