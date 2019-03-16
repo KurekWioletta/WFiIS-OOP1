@@ -4,7 +4,7 @@
 #include <string>
 
 class MaszynaStanow{
-    public:
+    public: 
         MaszynaStanow(): m_size(0), m_stan_arr(NULL), m_index(0) {};
         ~MaszynaStanow();
 

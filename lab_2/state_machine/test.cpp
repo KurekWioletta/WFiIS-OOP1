@@ -6,7 +6,7 @@ Biezacy stan zwracany jest przez operator ().
 Kazdy stan posiada rowniez operator (), ktory wykonuje czynnosc dla tego stanu.
 
 Ta maszyna jest bardzo prosta tj. mozna przechodzic po trzech stanach w gore lub w dol.
-
+ 
 Uwaga na zarządznie pamiecia.   
  */
 

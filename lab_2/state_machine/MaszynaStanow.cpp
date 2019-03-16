@@ -34,7 +34,7 @@ MaszynaStanow& MaszynaStanow::operator+= (Stan* stan){
 } 
   
 MaszynaStanow MaszynaStanow::operator () (){
-    MaszynaStanow tmp;
+    MaszynaStanow tmp; 
     if (m_stan_arr)
         cout << "Wykonanie w stanie: " << m_stan->getStan() << endl;
     return tmp;
