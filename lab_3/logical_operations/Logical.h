@@ -17,8 +17,8 @@ class Logical {
         static bool eval(const TwoArg& two_arg, bool x1, bool x2) {
             return two_arg.result(x1, x2);
         }
-        static bool eval(const NOT& arg, bool x1) {
-            return arg.result(x1);
+        static bool eval(const NOT& one_arg, bool x1) {
+            return one_arg.result(x1);
         }
 };
 
