@@ -39,26 +39,26 @@
 // /home/dokt/dog/WyslijZadanie.sh
 // bedac w katalogu zawierajacym rozwiazanie czyli ~/oop/lab_08
 
-#include"lab08.h"
+#include "List.h"
 
 int main ()
 {
-  List all;
+  List all; 
   all.insert(new Number (3.1));
-
+  
   Number num1 (31.1);
   all.insert(num1);
   
   IntArray a_int (3);
   a_int[0] = 1;
-  a_int[1] = 2.5;
-  a_int[2] = 3;
+  a_int[1] = 2.5;  
+  a_int[2] = 3;     
 
   all.insert(a_int);
   
   FloatArray a_float (3);
   a_float[0] = 1;
-  a_float[1] = 2.5;
+  a_float[1] = 2.5; 
   a_float[2] = 3;
 
   all.insert(a_float);
