@@ -10,17 +10,17 @@
 
 #include <iostream>
 #include "Logical.h"
-
+ 
 void p2(const TwoArg& op) {
   std::cout << "p2  " <<  op.result(true, false) << std::endl;
 }
-
+  
 int main() {
   std::cout << "OR   " <<  Logical::eval( OR(), false, false ) << std::endl;
   std::cout << "OR   " <<  Logical::eval( OR(), false, true ) << std::endl;
   std::cout << "AND  " <<  Logical::eval( AND(), false, false ) << std::endl;
   std::cout << "AND  " <<  Logical::eval( AND(),
-					  false,
+					  false,  
 					  Logical::eval(NOT(), false) ) << std::endl;
   std::cout << "AND  " <<  Logical::eval( AND(),
 					  Logical::eval(OR(), true, false ),
