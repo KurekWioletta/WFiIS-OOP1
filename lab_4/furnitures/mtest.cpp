@@ -25,7 +25,7 @@ int main() {
     std::cout << "jakas sofa "  << *x << std::endl;
     delete x;
   }
-
+  
   {
     Lozko* l = new Lozko(90, 100, 200, 190);
     const Mebel* x  = l;  
@@ -35,12 +35,12 @@ int main() {
 
   { // zabawa z wielokrotnym dziedziczeniem
     Kanapa* k = new Kanapa( 80, 90, 220, 195, 200);
-    Sofa* s = k; 
+    Sofa* s = k;
     Lozko* l = k; l = 0;
-     
+    
     std::cout << "kanapa z ikei " << *s << std::endl;
     delete s;    
-  }
+  }   
 }
 /* wynik
 jakis mebel Mebel: sz:100 wys:120 dl:150 
