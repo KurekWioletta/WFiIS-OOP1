@@ -32,6 +32,7 @@
 *.app
 
 # IDE
+program
 makefile
 .vscode
 .vscode/*
